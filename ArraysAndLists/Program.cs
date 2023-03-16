@@ -10,7 +10,7 @@ namespace ArraysAndLists
             //TODO:
 
             // Create an int Array and populate numbers 1-10
-            int[] bestArray = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; 
+            int[] bestArray = new[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; 
 
             /* Create two Lists of type int.
              * Name one List "evens"
@@ -25,13 +25,13 @@ namespace ArraysAndLists
              * Then add those numbers to either the evens List
              * or the odds List
              */
-            for (int x = 0; x < bestArray.Length; x++)
+            for (int i = 0; i < bestArray.Length; i++)
             {
-                if (bestArray[x] %2 == 0)
-                    evens.Add(bestArray[x]);
+                if (bestArray[i] %2 == 0)
+                    evens.Add(bestArray[i]);
                 else
                 {
-                    odds.Add(bestArray[x]);
+                    odds.Add(bestArray[i]);
                 }
             }
             
